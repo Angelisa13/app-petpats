@@ -1,0 +1,10 @@
+<h1>Editar producto</h1>
+
+<%= render "form", product: @product %>
+
+<br>
+
+<div>
+  <%= link_to "Ver detalles", @product, class: 'btn btn-primary' %> |
+  <%= link_to "Regresar al listado", products_path,  class: 'btn btn-warning' %>
+</div>
