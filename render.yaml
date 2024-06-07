@@ -1,6 +1,6 @@
 databases:
-  - name: storage/development.sqlite3
-    databaseName: storage/development.sqlite3
+  - name: storage.sqlite3
+    databaseName: storage.sqlite3
     user: username
     plan: free
 
