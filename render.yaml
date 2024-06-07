@@ -17,7 +17,7 @@ services:
         fromDatabase:
           name: mysite
           property: connectionString
-      - key: 62303d7497a58f94362a1ee307f22df3
+      - key: 7cabb0f6d6d336fe180e64a340074cd5
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
