@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<Title> PetPals </title>
+	<link rel="stylesheet" href="estilos.css" />
+	<script src="carrcom.js"></script>
+
+	
+</head>
+<body>
+
+	
+	<header> 
+		
+<div class="container-icon">
+		   <a href="inicio.html"><img src="Imagenes/logo2.jpeg" alt="log"></a>
+		</div> <h1> PetPals </h1>
+<nav>
+<ul>
+
+
+    <li><a href="perros.html">  Perros  </a></li>
+    <li><a href="gatos.html">  Gatos  </a></li>
+    <li><a href="reptiles.html">Reptiles</a></li>
+    <li><a href="roedores.html">Roedores</a></li>
+    <li><a href="aves.html">Aves</a></li>
+    <li><a href="peces.html">Peces</a></li>
+
+</ul>
+</nav>
+	</header>
+
+
+<div class="menu">
+  <ul>
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="sesion.html">Inicio de sesion</a></li>
+    <li><a href="tienda de mascotas.html">Productos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="registro.html">Registra a tu mascota!</a></li>
+    <li><a href="adopcion.html">Tramite de adopcion!</a></li>
+  </ul>
+</div>
+
+
+<div class="form-container">
+
+  <form action="/users" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="nombre"><h2>Nombre:</h2></label>
+    <input type="text" id="nombre" name="user[nombre]" required><br>
+
+    <label for="apellido"><h2>Apellido:</h2></label>
+    <input type="text" id="apellido" name="user[apellido]" required><br>
+
+    <label for="password"><h2>Contraseña:</h2></label>
+    <input type="password" id="password" name="user[password]" required><br>
+
+    <label for="telefono"><h2>Teléfono:</h2></label>
+    <input type="text" id="telefono" name="user[telefono]" required><br>
+
+    <input type="hidden" name="user[privilegio]" value="USUARIO">
+
+    <div class="form-group">
+        <button type="submit">Guardar</button>
+    </div>
+</form>
+
+
+</div>
+
+
+<footer>
+    <p>&copy; 2024 PetPals</p>
+</footer>
+
+</div>
+</body>
+</html>

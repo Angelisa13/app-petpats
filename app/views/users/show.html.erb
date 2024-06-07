@@ -1,0 +1,35 @@
+<div class="row">
+<div class="col-lg-12"> 
+  <h1> Detalles del usuario </h1>
+  <%= link_to "Regresar al listado", users_path, class: 'btn btn-primary' %>
+  <%= link_to "Editar el usuario", edit_user_path(@user), class: 'btn btn-primary' %>
+  <%= link_to "Eliminar usuario", user_path(@user), method: :delete, data: { turbo_method: :delete }, class: 'btn btn-danger' %>
+  <br><br>
+
+  <div class="card">
+    <table class="table">
+      <tr>
+        <td><b>Nombre:</b></tb>
+        <tb><%= @user.nombre %></tb>
+      </tr>
+      <tr>
+        <td><b>Apellidos:</b></tb>
+        <tb><%= @user.apellidos %></tb>
+      </tr>
+      <tr>
+        <td><b>Contrasena:</b></tb>
+        <tb><%= @user.contra %></tb>
+      </tr>
+      <tr>
+        <td><b>Telefono:</b></tb>
+        <tb><%= @user.telefono %></tb>
+      </tr>
+      <tr>
+        <td><b>Privilegio:</b></tb>
+        <tb><%= @user.privilegio %></tb>
+      </tr>
+    </table>
+  </div>
+
+</div>
+</div>

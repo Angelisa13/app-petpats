@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card" style="padding: 20px">
+      <h1>Usuarios</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Contrasena</th>
+            <th>Telefono</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <% @users.each do |user| %>
+        <tr>
+          <td><%= user.nombre %></td>
+          <td><%= user.apellidos %></td>
+          <td><%= user.contra %></td>
+          <td><%= user.telefono %></td>
+        </tr>
+        <% end %>
+      </tbody>
+        
+      </table>
+    </div>
+  </div>
+           
+
+  <div class="col-lg-6">
+    <div class="card" style="padding: 20px">
+      <h1>Todos los productos</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Referencia</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @products.each do |product| %>
+          <tr>
+            <td><%= product.id %></td>
+            <td><%= product.name %></td>
+            <td><%= product.reference %></td>
+            <td><%= product.amount %></td>
+ 
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

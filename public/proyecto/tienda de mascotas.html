@@ -1,0 +1,161 @@
+﻿<!Doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<Title> PetPals </title>
+	<link rel="stylesheet" href="estilos.css" />
+	<script src="carrcom.js"></script>
+
+	
+</head>
+<body>
+
+	
+	<header> 
+		
+<div class="container-icon">
+		   <a href="inicio.html"><img src="Imagenes/logo2.jpeg" alt="log"></a>
+		</div> <h1> PetPals </h1>
+<nav>
+<ul>
+
+
+    <li><a href="perros.html">  Perros  </a></li>
+    <li><a href="gatos.html">  Gatos  </a></li>
+    <li><a href="reptiles.html">Reptiles</a></li>
+    <li><a href="roedores.html">Roedores</a></li>
+    <li><a href="aves.html">Aves</a></li>
+    <li><a href="peces.html">Peces</a></li>
+
+</ul>
+</nav>
+	</header>
+
+
+<div class="menu">
+  <ul>
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="sesion.html">Inicio de sesion</a></li>
+    <li><a href="tienda de mascotas.html">Productos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="registro.html">Registra a tu mascota!</a></li>
+    <li><a href="adopcion.html">Tramite de adopcion!</a></li>
+  </ul>
+</div>
+
+<div class="content">
+<main class="main-content">
+
+<div id="cart">
+<h1> Carrito:  </h1>
+      <ul id="cart-items"></ul>
+      <p> <h1> Total: <span id="total"></span></p></h1>
+      <button onclick="clearCart()">Limpiar Carrito</button> <button> Comprar </button>
+</div>
+
+
+<div align="center">
+  <h1> Producto </h1>
+</main>
+<fieldset>
+<legend> Juguetes </legend>	
+	
+	<div class="container-items">
+
+		<div class="item">
+		   <figure>
+			<img src="Imagenes/munper.jpg" alt="perro azul">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Juguete en forma de perro </h2>
+		   <p class="price">80 MXN</p>
+		   <button onclick="addToCart(1, 'Juguete en forma de perro', 80)">Añadir al carrito</button>
+		   </div>
+		</div>
+
+		<div class="item">
+
+		   <figure>
+			<img src="Imagenes/munji.jpg" alt="Jirafa">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Juguete en forma de jirrafa </h2>
+		   <p class="price">30 MXN</p>
+		   <button onclick="addToCart(2, 'Juguete en forma de jirrafa', 30)">Añadir al carrito</button>
+		   </div>
+		</div>
+
+		<div class="item">
+		   <figure>
+			<img src="Imagenes/pelroj.jpg" alt="pelota roja">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Pelota de espuma roja </h2>
+		   <p class="price">20 MXN</p>
+		   <button onclick="addToCart(3, 'Pelota de espuma roja', 20)">Añadir al carrito</button>
+		   </div>
+		</div>
+	
+		<div class="item">
+		   <figure>
+			<img src="Imagenes/corros.jpg" alt="Correa rosa">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Correa rosa para perro </h2>
+		   <p class="price">50 MXN</p>
+		   <button onclick="addToCart(4, 'Correa rosa para perro', 50)">Añadir al carrito</button>
+		   </div>
+		</div>
+
+		<div class="item">
+		   <figure>
+
+			<img src="Imagenes/pelbas.jpg" alt="Pelota naranja con negro">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Pelota de plastico </h2>
+		   <p class="price">35 MXN</p>
+		   <button onclick="addToCart(5, 'Pelota de plastico', 35)">Añadir al carrito</button>
+		   </div>
+		</div>
+</fieldset>
+
+<fieldset>
+<div align="center">
+<h1><legend> Comida </legend></h1>
+
+
+		<div class="item">
+		   <figure>
+			<img src="Imagenes/comper1.jpg" alt="Poder canino">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Poder canino 25Kg </h2>
+		   <p class="price">200 MXN</p>
+		   <button onclick="addToCart(6, 'Poder canino 25Kg', 200)">Añadir al carrito</button>
+		   </div>
+		</div>
+
+		<div class="item">
+		   <figure>
+			<img src="Imagenes/comper2.jpg" alt="Dog Chow">
+		   </figure>
+		   <div class="info-product">
+		   <h2> Dog Chow 4,0Kg </h2>
+		   <p class="price">350 MXN</p>
+		   <button onclick="addToCart(7, 'Dog Chow 4,0Kg', 350)">Añadir al carrito</button>
+		   </div>
+		</div>
+
+
+</fieldset>
+
+	</div>		
+
+<footer>
+    <p>&copy; 2024 PetPals</p>
+</footer>
+
+</div>
+</body>
+</html>

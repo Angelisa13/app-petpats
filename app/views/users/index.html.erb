@@ -1,0 +1,32 @@
+<h1>Listado de usuarios</h1>
+<a href="<%= new_user_path %>" class="btn btn-primary btn-icon-split">
+  <span class="icon text-white-50">
+      <i class="fas fa-flag"></i>
+  </span>
+  <span class="text">Crear Usuario</span>
+</a>
+
+<br><br>
+<table class="table">
+        <thead>
+          <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Contrasena</th>
+            <th>Telefono</th>
+            <th>Privilegio</th>
+          </tr>
+        </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.nombre %></td>
+      <td><%= user.apellidos %></td>
+      <td><%= user.contra %></td>
+      <td><%= user.telefono %></td>
+      <td><%= user.privilegio%></td>
+      <td><%= link_to "Detalles", user_path(user), class: 'btn btn-primary' %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,50 @@
+<div class="row">
+ <div class="col-lg-12">
+    <div class="card p-5">
+
+    <%= form_with(model: user) do |form| %>
+      <% if user.errors.any? %>
+        <div style="color: red">
+          <h2><%= pluralize(user.errors.count, "error") %>, su error es causado por:</h2>
+    
+          <ul>
+            <% user.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    
+      <div class="form-group">
+        <%= form.label :nombre, style: "display: block" %>
+        <%= form.text_field :nombre, class: 'form-control' %>
+      </div>
+    
+      <div class="form-group">
+        <%= form.label :apellidos, style: "display: block" %>
+        <%= form.text_field :apellidos, class: 'form-control' %>
+      </div>
+    
+      <div class="form-group">
+        <%= form.label :contra, style: "display: block" %>
+        <%= form.text_field :contra, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :telefono, style: "display: block" %>
+        <%= form.text_field :telefono, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :privilegio, style: "display: block" %>
+        <%= form.text_field :privilegio, class: 'form-control' %>
+      </div>
+
+      <div>
+        <%= form.submit "Enviar", class: 'btn btn-primary' %>
+      </div>
+    <% end %>
+
+    </div>
+  </div>
+</div>

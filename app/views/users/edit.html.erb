@@ -1,0 +1,10 @@
+<h1>Editar</h1>
+
+<%= render "form", product: @user %>
+
+<br>
+
+<div>
+  <%= link_to "Ver detalles", @user, class: 'btn btn-primary' %> |
+  <%= link_to "Regresar al listado", users_path,  class: 'btn btn-warning' %>
+</div>
